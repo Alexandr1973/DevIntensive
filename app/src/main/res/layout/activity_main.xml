@@ -9,8 +9,233 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ui.activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //Шапка
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_medial_24"
+                android:paddingTop="@dimen/spacing_medial_24">
+
+                <LinearLayout
+                    style="@style/head">
+
+                    <TextView
+                        style="@style/head_value"
+                        android:text="1"/>
+
+                    <TextView
+                        style="@style/head_text"
+                        android:text="Рейтинг"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/width_line_head"
+                    android:layout_height="@dimen/height_line_head"
+                    android:background="@color/color_gray_light"/>
+
+                <LinearLayout
+                    style="@style/head">
+
+                    <TextView
+                        style="@style/head_value"
+                        android:text="1"/>
+
+                    <TextView
+                        style="@style/head_text"
+                        android:text="Строчек кода"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/width_line_head"
+                    android:layout_height="@dimen/height_line_head"
+                    android:background="@color/color_gray_light"/>
+
+                <LinearLayout
+                    style="@style/head">
+
+                    <TextView
+                        style="@style/head_value"
+                        android:text="1"/>
+
+                    <TextView
+                        style="@style/head_text"
+                        android:text="Проектов"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            //Мобильный телефон
+            <LinearLayout
+                style="@style/row">
+
+                <ImageView
+                    style="@style/icon_left"
+                    android:src="@drawable/ic_call_black_24dp"/>
+
+                <LinearLayout
+                    style="@style/row_data">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_phone"
+                            android:text="@string/text_phone"
+                            android:inputType="phone"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/icon_right"
+                    android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+
+
+            </LinearLayout>
+
+            //Почта
+            <LinearLayout
+                style="@style/row">
+
+                <ImageView
+                    style="@style/icon_left"
+                    android:src="@drawable/ic_mail_outline_black_24dp"/>
+
+                <LinearLayout
+                    style="@style/row_data">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_email"
+                            android:text="@string/text_email"
+                            />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/icon_right"
+                    android:src="@drawable/ic_send_black_24dp"/>
+
+
+            </LinearLayout>
+
+            //ВКонтакте
+            <LinearLayout
+                style="@style/row">
+
+                <ImageView
+                    style="@style/icon_left"
+                    android:src="@drawable/ic_vk_circle_24dp"/>
+
+                <LinearLayout
+                    style="@style/row_data">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_vk"
+                            android:text="@string/text_vk"
+                            />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/icon_right"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp"/>
+
+
+            </LinearLayout>
+
+            //Репозитроий
+            <LinearLayout
+                style="@style/row">
+
+                <ImageView
+                    style="@style/icon_left"
+                    android:src="@drawable/ic_github_circle_24dp"/>
+
+                <LinearLayout
+                    style="@style/row_data">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_github"
+                            android:text="@string/text_github"
+                            />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/icon_right"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp"/>
+
+
+            </LinearLayout>
+
+            //О себе
+            <LinearLayout
+                style="@style/row">
+
+                <ImageView
+                    style="@style/icon_left"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+
+                <LinearLayout
+                    style="@style/row_comment">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_about_me"
+                            android:text="@string/text_about_me"
+                            android:inputType="textMultiLine"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>
+
+
+
